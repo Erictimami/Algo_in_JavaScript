@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- add the library for using jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        //// this code is redundant and repetition, let use "This"
+
+        // $(document).ready(function(){
+        //     $('#image1').click(function(){
+        //         $('#image1').hide();
+        //     });
+        //     $('#image2').click(function(){
+        //         $('#image2').hide();
+        //     });
+        //     $('#image3').click(function(){
+        //         $('#image3').hide();
+        //     });
+        //     $('#image4').click(function(){
+        //         $('#image4').hide();
+        //     });
+        //     $('#image5').click(function(){
+        //         $('#image5').hide();
+        //     });
+        // });
+
+        $(document).ready(function(){  //by using 'This' is so efficient. Awesone
+            $('img').click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+        <!-- We don't need anymore the identifiant Id for a specific image -->
+    <!-- <img src="main_img_1.png" id="image1" />
+    <img src="main_img_2.png" id="image2" />
+    <img src="main_img_3.png" id="image3" />
+    <img src="main_img_4.png" id="image4" />
+    <img src="main_img_5.png" id="image5" /> -->
+
+    <img src="main_img_1.png"/>
+    <img src="main_img_2.png"/>
+    <img src="main_img_3.png"/>
+    <img src="main_img_4.png"/>
+    <img src="main_img_5.png"/>
+
+</body>
+
+</html>
